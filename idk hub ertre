@@ -1,0 +1,214 @@
+-- idk hub
+
+
+local startui = Instance.new("ScreenGui")
+local bgb = Instance.new("Frame")
+local chooses = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local title_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local title_3 = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local title_4 = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+
+--Properties:
+
+startui.Name = "start ui"
+startui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+bgb.Name = "bgb"
+bgb.Parent = startui
+bgb.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bgb.BackgroundTransparency = 0.500
+bgb.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bgb.BorderSizePixel = 0
+bgb.Position = UDim2.new(-0.0251409076, 0, -0.109484978, 0)
+bgb.Size = UDim2.new(1.20695651, 0, 1.3359133, 0)
+
+chooses.Name = "chooses"
+chooses.Parent = bgb
+chooses.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+chooses.BackgroundTransparency = 1.000
+chooses.BorderColor3 = Color3.fromRGB(255, 255, 255)
+chooses.BorderSizePixel = 0
+chooses.Position = UDim2.new(0.288590014, 0, 0.197626948, 0)
+chooses.Size = UDim2.new(0.340000004, 0, 0.515479863, 0)
+
+title.Name = "title"
+title.Parent = chooses
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0.10607218, 0, 0.227593333, 0)
+title.Size = UDim2.new(0, 187, 0, 14)
+title.Font = Enum.Font.SourceSansBold
+title.Text = " ui version v.0.1"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(3, 58, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = title
+
+title_2.Name = "title"
+title_2.Parent = chooses
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title_2.BorderSizePixel = 0
+title_2.Position = UDim2.new(0.10607218, 0, 0.282890946, 0)
+title_2.Size = UDim2.new(0, 187, 0, 14)
+title_2.Font = Enum.Font.SourceSansBold
+title_2.Text = "-tool giver"
+title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_2.TextScaled = true
+title_2.TextSize = 14.000
+title_2.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(3, 58, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = title_2
+
+title_3.Name = "title"
+title_3.Parent = chooses
+title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_3.BackgroundTransparency = 1.000
+title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title_3.BorderSizePixel = 0
+title_3.Position = UDim2.new(0.108270466, 0, 0.339432061, 0)
+title_3.Size = UDim2.new(0, 189, 0, 14)
+title_3.Font = Enum.Font.SourceSansBold
+title_3.Text = "-game (EARTH TREE)"
+title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_3.TextScaled = true
+title_3.TextSize = 14.000
+title_3.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(3, 58, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = title_3
+
+TextButton.Parent = chooses
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.368606955, 0, 0.807807803, 0)
+TextButton.Size = UDim2.new(0.255977064, 0, 0.144144148, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "OK"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+
+UICorner.Parent = TextButton
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(42, 180, 255)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(42, 180, 255))}
+UIGradient_4.Parent = TextButton
+
+UICorner_2.Parent = chooses
+
+title_4.Name = "title"
+title_4.Parent = chooses
+title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_4.BackgroundTransparency = 1.000
+title_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title_4.BorderSizePixel = 0
+title_4.Position = UDim2.new(0.0255754478, 0, 0, 0)
+title_4.Size = UDim2.new(0, 79, 0, 25)
+title_4.Font = Enum.Font.SourceSansBold
+title_4.Text = "IDK HUB"
+title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_4.TextScaled = true
+title_4.TextSize = 14.000
+title_4.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.46, Color3.fromRGB(3, 58, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Parent = title_4
+
+-- Scripts:
+
+local function QORZ_fake_script() -- UIGradient.gdnt rgb 
+	local script = Instance.new('LocalScript', UIGradient)
+
+	local uigd = script.Parent
+	while true do
+		uigd.Rotation += 0.5
+		wait()
+	end
+end
+coroutine.wrap(QORZ_fake_script)()
+local function YDGJ_fake_script() -- UIGradient_2.gdnt rgb 
+	local script = Instance.new('LocalScript', UIGradient_2)
+
+	local uigd = script.Parent
+	while true do
+		uigd.Rotation += 0.5
+		wait()
+	end
+end
+coroutine.wrap(YDGJ_fake_script)()
+local function FCYCUAX_fake_script() -- UIGradient_3.gdnt rgb 
+	local script = Instance.new('LocalScript', UIGradient_3)
+
+	local uigd = script.Parent
+	while true do
+		uigd.Rotation += 0.5
+		wait()
+	end
+end
+coroutine.wrap(FCYCUAX_fake_script)()
+local function HIGUXGT_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local strt = script["Windows 11 Calendar Notify"]
+	local thisbtnstr = script.Parent
+	local HIDE = script.Parent.Parent.Parent.Parent.bgb
+	
+	thisbtnstr.MouseButton1Click:Connect(function()
+		strt.Volume = 50
+		strt:Play()
+		HIDE.Visible = false
+	end)
+	
+end
+coroutine.wrap(HIGUXGT_fake_script)()
+local function TBAJSLB_fake_script() -- UIGradient_5.gdnt rgb 
+	local script = Instance.new('LocalScript', UIGradient_5)
+
+	local uigd = script.Parent
+	while true do
+		uigd.Rotation += 0.5
+		wait()
+	end
+end
+coroutine.wrap(TBAJSLB_fake_script)()
+local function MZLP_fake_script() -- chooses.bguito 
+	local script = Instance.new('LocalScript', chooses)
+
+	local uits = script.Parent.Parent.chooses
+	
+	_G.togt = true
+	while _G.togt == true do
+		uits.Transparency += -0.1
+	wait()
+	end
+end
+coroutine.wrap(MZLP_fake_script)()
+local function BVDHOKR_fake_script() -- startui.nof 
+	local script = Instance.new('LocalScript', startui)
+
+	local noff = script["Audio/notify-ask"]
+	
+	noff:Play()
+	
+	
+end
+coroutine.wrap(BVDHOKR_fake_script)()
