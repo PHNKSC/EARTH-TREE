@@ -249,9 +249,9 @@ local script = G2L["11"];
 	local click = script.Parent
 	
 	click.MouseButton1Click:Connect(function()
-		local args ={
-			[1] = "Change"
-			[2] = "Boombox"
+		local args = {
+			[1] = "Change",
+			[2] = "Boombox",
 			[3] = "Inv"
 		}
 	
