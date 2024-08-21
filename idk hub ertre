@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 25 | Scripts: 7 | Modules: 0
+-- Instances: 27 | Scripts: 7 | Modules: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -125,55 +125,90 @@ G2L["10"]["PaddingBottom"] = UDim.new(0, 10);
 G2L["11"] = Instance.new("LocalScript", G2L["d"]);
 
 
--- StarterGui.ScreenGui.tcui
-G2L["12"] = Instance.new("TextButton", G2L["1"]);
-G2L["12"]["TextWrapped"] = true;
+-- StarterGui.ScreenGui.uiui.toolgivernames
+G2L["12"] = Instance.new("TextLabel", G2L["2"]);
 G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["12"]["TextSize"] = 14;
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["TextScaled"] = true;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12"]["Size"] = UDim2.new(0.04174, 0, 0.07517, 0);
-G2L["12"]["BackgroundTransparency"] = 0.5;
-G2L["12"]["Name"] = [[tcui]];
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[IDK]];
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["12"]["Visible"] = false;
-G2L["12"]["Position"] = UDim2.new(0.47913, 0, 0.21342, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Name"] = [[toolgivernames]];
+G2L["12"]["Position"] = UDim2.new(-0.55861, 0, -0.39996, 0);
+
+-- StarterGui.ScreenGui.uiui.toolgivernames.bombx
+G2L["13"] = Instance.new("TextLabel", G2L["12"]);
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["13"]["Visible"] = false;
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[local args ={
+	[1] = "Change"
+	[2] = "Boombox"
+	[3] = "Inv"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))]];
+G2L["13"]["Name"] = [[bombx]];
+G2L["13"]["Position"] = UDim2.new(-0.55861, 0, -0.39996, 0);
+
+-- StarterGui.ScreenGui.tcui
+G2L["14"] = Instance.new("TextButton", G2L["1"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0.04174, 0, 0.07517, 0);
+G2L["14"]["BackgroundTransparency"] = 0.5;
+G2L["14"]["Name"] = [[tcui]];
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[IDK]];
+G2L["14"]["Visible"] = false;
+G2L["14"]["Position"] = UDim2.new(0.47913, 0, 0.21342, 0);
 
 -- StarterGui.ScreenGui.tcui.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["12"]);
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
 
 
 -- StarterGui.ScreenGui.tcui.UIStroke
-G2L["14"] = Instance.new("UIStroke", G2L["12"]);
-G2L["14"]["Thickness"] = 2.2;
-G2L["14"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["16"] = Instance.new("UIStroke", G2L["14"]);
+G2L["16"]["Thickness"] = 2.2;
+G2L["16"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 -- StarterGui.ScreenGui.tcui.rgb
-G2L["15"] = Instance.new("LocalScript", G2L["12"]);
-G2L["15"]["Name"] = [[rgb]];
+G2L["17"] = Instance.new("LocalScript", G2L["14"]);
+G2L["17"]["Name"] = [[rgb]];
 
 -- StarterGui.ScreenGui.tcui.LocalScript
-G2L["16"] = Instance.new("LocalScript", G2L["12"]);
+G2L["18"] = Instance.new("LocalScript", G2L["14"]);
 
 
 -- StarterGui.ScreenGui.tcui.UIPadding
-G2L["17"] = Instance.new("UIPadding", G2L["12"]);
-G2L["17"]["PaddingTop"] = UDim.new(0, 5);
-G2L["17"]["PaddingRight"] = UDim.new(0, 5);
-G2L["17"]["PaddingLeft"] = UDim.new(0, 5);
-G2L["17"]["PaddingBottom"] = UDim.new(0, 5);
+G2L["19"] = Instance.new("UIPadding", G2L["14"]);
+G2L["19"]["PaddingTop"] = UDim.new(0, 5);
+G2L["19"]["PaddingRight"] = UDim.new(0, 5);
+G2L["19"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["19"]["PaddingBottom"] = UDim.new(0, 5);
 
 -- StarterGui.ScreenGui.tcui.UIGradient
-G2L["18"] = Instance.new("UIGradient", G2L["12"]);
-G2L["18"]["Offset"] = Vector2.new(1, 0);
-G2L["18"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.495, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+G2L["1a"] = Instance.new("UIGradient", G2L["14"]);
+G2L["1a"]["Offset"] = Vector2.new(1, 0);
+G2L["1a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.495, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
 
 -- StarterGui.ScreenGui.tcui.tggleui
-G2L["19"] = Instance.new("LocalScript", G2L["12"]);
-G2L["19"]["Name"] = [[tggleui]];
+G2L["1b"] = Instance.new("LocalScript", G2L["14"]);
+G2L["1b"]["Name"] = [[tggleui]];
 
 -- StarterGui.ScreenGui.uiui.UIStroke.rgb
 local function C_6()
@@ -211,18 +246,13 @@ task.spawn(C_a);
 -- StarterGui.ScreenGui.uiui.btn.LocalScript
 local function C_11()
 local script = G2L["11"];
-	local args ={
-		[1] = "Change"
-		[2] = "Boombox"
-		[3] = "Inv"
-	}
+	loadstring(script.Parent.Parent.toolgivernames.bombx.Text) 
 	
-	game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
 end;
 task.spawn(C_11);
 -- StarterGui.ScreenGui.tcui.rgb
-local function C_15()
-local script = G2L["15"];
+local function C_17()
+local script = G2L["17"];
 	local thisframe = script.Parent.UIGradient
 	
 	while true do
@@ -230,18 +260,18 @@ local script = G2L["15"];
 		wait()
 	end
 end;
-task.spawn(C_15);
+task.spawn(C_17);
 -- StarterGui.ScreenGui.tcui.LocalScript
-local function C_16()
-local script = G2L["16"];
+local function C_18()
+local script = G2L["18"];
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 	
 end;
-task.spawn(C_16);
+task.spawn(C_18);
 -- StarterGui.ScreenGui.tcui.tggleui
-local function C_19()
-local script = G2L["19"];
+local function C_1b()
+local script = G2L["1b"];
 	
 	local fui = script.Parent.Parent.uiui
 	local ic = script.Parent.Parent.tcui
@@ -253,6 +283,6 @@ local script = G2L["19"];
 	
 	
 end;
-task.spawn(C_19);
+task.spawn(C_1b);
 
 return G2L["1"], require;
