@@ -72,9 +72,9 @@ G2L["a"]["Active"] = true;
 G2L["a"]["BorderSizePixel"] = 0;
 G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["Name"] = [[TABTAB!!!]];
-G2L["a"]["Size"] = UDim2.new(0, 472, 0, 340);
+G2L["a"]["Size"] = UDim2.new(0.92581, 0, 0.82867, 0);
 G2L["a"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Position"] = UDim2.new(0.07422, 0, 0.16286, 0);
+G2L["a"]["Position"] = UDim2.new(0.07227, 0, 0.16046, 0);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["BackgroundTransparency"] = 1;
 
