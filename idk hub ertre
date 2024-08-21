@@ -246,8 +246,13 @@ task.spawn(C_a);
 -- StarterGui.ScreenGui.uiui.btn.LocalScript
 local function C_11()
 local script = G2L["11"];
-	loadstring(script.Parent.Parent.toolgivernames.bombx.Text) 
-	
+	local args ={
+	[1] = "Change"
+	[2] = "Boombox"
+	[3] = "Inv"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
 end;
 task.spawn(C_11);
 -- StarterGui.ScreenGui.tcui.rgb
