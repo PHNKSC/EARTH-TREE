@@ -1,43 +1,117 @@
-
-
--- Instances: 7 | Scripts: 2 | Modules: 0
+-- Instances: 18 | Scripts: 6 | Modules: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 
 
--- StarterGui.ScreenGui.Frame
+-- StarterGui.ScreenGui.uiui
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Size"] = UDim2.new(0.37791, 0, 0.43653, 0);
-G2L["2"]["Position"] = UDim2.new(0.31085, 0, 0.27245, 0);
+G2L["2"]["Size"] = UDim2.new(0.4452, 0, 0.52958, 0);
+G2L["2"]["Position"] = UDim2.new(0.27718, 0, 0.43256, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[uiui]];
+G2L["2"]["BackgroundTransparency"] = 0.15;
 
--- StarterGui.ScreenGui.Frame.UICorner
+-- StarterGui.ScreenGui.uiui.UICorner
 G2L["3"] = Instance.new("UICorner", G2L["2"]);
 
 
--- StarterGui.ScreenGui.Frame.UIStroke
+-- StarterGui.ScreenGui.uiui.UIStroke
 G2L["4"] = Instance.new("UIStroke", G2L["2"]);
 G2L["4"]["Thickness"] = 2.2;
 G2L["4"]["Color"] = Color3.fromRGB(255, 255, 255);
 
--- StarterGui.ScreenGui.Frame.UIStroke.UIGradient
+-- StarterGui.ScreenGui.uiui.UIStroke.UIGradient
 G2L["5"] = Instance.new("UIGradient", G2L["4"]);
 G2L["5"]["Offset"] = Vector2.new(-0.5, 0);
 G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 2, 2)),ColorSequenceKeypoint.new(0.140, Color3.fromRGB(255, 208, 17)),ColorSequenceKeypoint.new(0.263, Color3.fromRGB(50, 255, 27)),ColorSequenceKeypoint.new(0.374, Color3.fromRGB(50, 239, 255)),ColorSequenceKeypoint.new(0.462, Color3.fromRGB(47, 68, 255)),ColorSequenceKeypoint.new(0.543, Color3.fromRGB(29, 21, 255)),ColorSequenceKeypoint.new(0.631, Color3.fromRGB(210, 26, 255)),ColorSequenceKeypoint.new(0.730, Color3.fromRGB(255, 29, 203)),ColorSequenceKeypoint.new(0.820, Color3.fromRGB(255, 25, 87)),ColorSequenceKeypoint.new(0.917, Color3.fromRGB(255, 0, 5)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 5))};
 
--- StarterGui.ScreenGui.Frame.UIStroke.rgb
+-- StarterGui.ScreenGui.uiui.UIStroke.rgb
 G2L["6"] = Instance.new("LocalScript", G2L["4"]);
 G2L["6"]["Name"] = [[rgb]];
 
--- StarterGui.ScreenGui.Frame.LocalScript
+-- StarterGui.ScreenGui.uiui.LocalScript
 G2L["7"] = Instance.new("LocalScript", G2L["2"]);
 
 
--- StarterGui.ScreenGui.Frame.UIStroke.rgb
+-- StarterGui.ScreenGui.uiui.minisize
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0.07813, 0, 0.11984, 0);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Name"] = [[minisize]];
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[_]];
+G2L["8"]["Position"] = UDim2.new(0.91995, 0, -0.05554, 0);
+
+-- StarterGui.ScreenGui.uiui.minisize.RGB
+G2L["9"] = Instance.new("Script", G2L["8"]);
+G2L["9"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.minisize.minis
+G2L["a"] = Instance.new("LocalScript", G2L["8"]);
+G2L["a"]["Name"] = [[minis]];
+
+-- StarterGui.ScreenGui.tcui
+G2L["b"] = Instance.new("TextButton", G2L["1"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0.04174, 0, 0.06443, 0);
+G2L["b"]["BackgroundTransparency"] = 0.5;
+G2L["b"]["Name"] = [[tcui]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[IDK]];
+G2L["b"]["Visible"] = false;
+G2L["b"]["Position"] = UDim2.new(0.47913, 0, 0.21342, 0);
+
+-- StarterGui.ScreenGui.tcui.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+
+
+-- StarterGui.ScreenGui.tcui.UIStroke
+G2L["d"] = Instance.new("UIStroke", G2L["b"]);
+G2L["d"]["Thickness"] = 2.2;
+G2L["d"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+-- StarterGui.ScreenGui.tcui.rgb
+G2L["e"] = Instance.new("LocalScript", G2L["b"]);
+G2L["e"]["Name"] = [[rgb]];
+
+-- StarterGui.ScreenGui.tcui.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["b"]);
+
+
+-- StarterGui.ScreenGui.tcui.UIPadding
+G2L["10"] = Instance.new("UIPadding", G2L["b"]);
+G2L["10"]["PaddingTop"] = UDim.new(0, 5);
+G2L["10"]["PaddingRight"] = UDim.new(0, 5);
+G2L["10"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["10"]["PaddingBottom"] = UDim.new(0, 5);
+
+-- StarterGui.ScreenGui.tcui.UIGradient
+G2L["11"] = Instance.new("UIGradient", G2L["b"]);
+G2L["11"]["Offset"] = Vector2.new(1, 0);
+G2L["11"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.495, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+
+-- StarterGui.ScreenGui.tcui.tggleui
+G2L["12"] = Instance.new("LocalScript", G2L["b"]);
+G2L["12"]["Name"] = [[tggleui]];
+
+-- StarterGui.ScreenGui.uiui.UIStroke.rgb
 local function C_6()
 local script = G2L["6"];
 	local thisframe = script.Parent.UIGradient
@@ -48,7 +122,7 @@ local script = G2L["6"];
 	end
 end;
 task.spawn(C_6);
--- StarterGui.ScreenGui.Frame.LocalScript
+-- StarterGui.ScreenGui.uiui.LocalScript
 local function C_7()
 local script = G2L["7"];
 	script.Parent.Active = true
@@ -56,5 +130,53 @@ local script = G2L["7"];
 	
 end;
 task.spawn(C_7);
+-- StarterGui.ScreenGui.uiui.minisize.minis
+local function C_a()
+local script = G2L["a"];
+	local closeui = script.Parent
+	local fui = script.Parent.Parent.Parent.uiui
+	local ic = script.Parent.Parent.Parent.tcui
+	
+	closeui.MouseButton1Click:Connect(function()
+		fui.Visible = false
+		ic.Visible = true
+	end)
+	
+end;
+task.spawn(C_a);
+-- StarterGui.ScreenGui.tcui.rgb
+local function C_e()
+local script = G2L["e"];
+	local thisframe = script.Parent.UIGradient
+	
+	while true do
+		thisframe.Rotation += 2
+		wait()
+	end
+end;
+task.spawn(C_e);
+-- StarterGui.ScreenGui.tcui.LocalScript
+local function C_f()
+local script = G2L["f"];
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	
+end;
+task.spawn(C_f);
+-- StarterGui.ScreenGui.tcui.tggleui
+local function C_12()
+local script = G2L["12"];
+	
+	local fui = script.Parent.Parent.uiui
+	local ic = script.Parent.Parent.tcui
+	
+	ic.MouseButton1Click:Connect(function()
+		fui.Visible = true
+		ic.Visible = false
+	end)
+	
+	
+end;
+task.spawn(C_12);
 
 return G2L["1"], require;
