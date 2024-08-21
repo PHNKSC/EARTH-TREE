@@ -1,193 +1,196 @@
--- Instances: 25 | Scripts: 7 | Modules: 0
-local G2L = {};
+-- // GUI TO LUA \\ --
 
--- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+-- // INSTANCES: 25 | SCRIPTS: 7 | MODULES: 0 \\ --
 
+local UI = {}
 
--- StarterGui.ScreenGui.uiui
-G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Size"] = UDim2.new(0.4452, 0, 0.56045, 0);
-G2L["2"]["Position"] = UDim2.new(0.27718, 0, 0.27283, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[uiui]];
-G2L["2"]["BackgroundTransparency"] = 0.15;
-
--- StarterGui.ScreenGui.uiui.UICorner
-G2L["3"] = Instance.new("UICorner", G2L["2"]);
+-- // StarterGui.ScreenGui \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
 
 
--- StarterGui.ScreenGui.uiui.UIStroke
-G2L["4"] = Instance.new("UIStroke", G2L["2"]);
-G2L["4"]["Thickness"] = 2.2;
-G2L["4"]["Color"] = Color3.fromRGB(255, 255, 255);
+-- // StarterGui.ScreenGui.uiui \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["Size"] = UDim2.new(0.4452, 0, 0.56045, 0)
+UI["2"]["Position"] = UDim2.new(0.27718, 0, 0.27283, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["Name"] = [[uiui]]
+UI["2"]["BackgroundTransparency"] = 0.15
 
--- StarterGui.ScreenGui.uiui.UIStroke.UIGradient
-G2L["5"] = Instance.new("UIGradient", G2L["4"]);
-G2L["5"]["Offset"] = Vector2.new(-0.5, 0);
-G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 2, 2)),ColorSequenceKeypoint.new(0.140, Color3.fromRGB(255, 208, 17)),ColorSequenceKeypoint.new(0.263, Color3.fromRGB(50, 255, 27)),ColorSequenceKeypoint.new(0.374, Color3.fromRGB(50, 239, 255)),ColorSequenceKeypoint.new(0.462, Color3.fromRGB(47, 68, 255)),ColorSequenceKeypoint.new(0.543, Color3.fromRGB(29, 21, 255)),ColorSequenceKeypoint.new(0.631, Color3.fromRGB(210, 26, 255)),ColorSequenceKeypoint.new(0.730, Color3.fromRGB(255, 29, 203)),ColorSequenceKeypoint.new(0.820, Color3.fromRGB(255, 25, 87)),ColorSequenceKeypoint.new(0.917, Color3.fromRGB(255, 0, 5)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 5))};
-
--- StarterGui.ScreenGui.uiui.UIStroke.rgb
-G2L["6"] = Instance.new("LocalScript", G2L["4"]);
-G2L["6"]["Name"] = [[rgb]];
-
--- StarterGui.ScreenGui.uiui.LocalScript
-G2L["7"] = Instance.new("LocalScript", G2L["2"]);
+-- // StarterGui.ScreenGui.uiui.UICorner \\ --
+UI["3"] = Instance.new("UICorner", UI["2"])
 
 
--- StarterGui.ScreenGui.uiui.minisize
-G2L["8"] = Instance.new("TextButton", G2L["2"]);
-G2L["8"]["TextWrapped"] = true;
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["TextSize"] = 14;
-G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["TextScaled"] = true;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8"]["Size"] = UDim2.new(0.07813, 0, 0.11984, 0);
-G2L["8"]["BackgroundTransparency"] = 1;
-G2L["8"]["Name"] = [[minisize]];
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Text"] = [[_]];
-G2L["8"]["Position"] = UDim2.new(0.91995, 0, -0.05554, 0);
+-- // StarterGui.ScreenGui.uiui.UIStroke \\ --
+UI["4"] = Instance.new("UIStroke", UI["2"])
+UI["4"]["Thickness"] = 2.2
+UI["4"]["Color"] = Color3.fromRGB(255, 255, 255)
 
--- StarterGui.ScreenGui.uiui.minisize.RGB
-G2L["9"] = Instance.new("Script", G2L["8"]);
-G2L["9"]["Name"] = [[RGB]];
+-- // StarterGui.ScreenGui.uiui.UIStroke.UIGradient \\ --
+UI["5"] = Instance.new("UIGradient", UI["4"])
+UI["5"]["Offset"] = Vector2.new(-0.5, 0)
+UI["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 2, 2)),ColorSequenceKeypoint.new(0.140, Color3.fromRGB(255, 208, 17)),ColorSequenceKeypoint.new(0.263, Color3.fromRGB(50, 255, 27)),ColorSequenceKeypoint.new(0.374, Color3.fromRGB(50, 239, 255)),ColorSequenceKeypoint.new(0.462, Color3.fromRGB(47, 68, 255)),ColorSequenceKeypoint.new(0.543, Color3.fromRGB(29, 21, 255)),ColorSequenceKeypoint.new(0.631, Color3.fromRGB(210, 26, 255)),ColorSequenceKeypoint.new(0.730, Color3.fromRGB(255, 29, 203)),ColorSequenceKeypoint.new(0.820, Color3.fromRGB(255, 25, 87)),ColorSequenceKeypoint.new(0.917, Color3.fromRGB(255, 0, 5)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 5))}
 
--- StarterGui.ScreenGui.uiui.minisize.minis
-G2L["a"] = Instance.new("LocalScript", G2L["8"]);
-G2L["a"]["Name"] = [[minis]];
+-- // StarterGui.ScreenGui.uiui.UIStroke.rgb \\ --
+UI["6"] = Instance.new("LocalScript", UI["4"])
+UI["6"]["Name"] = [[rgb]]
 
--- StarterGui.ScreenGui.uiui.IDKUITITLEe
-G2L["b"] = Instance.new("TextLabel", G2L["2"]);
-G2L["b"]["TextWrapped"] = true;
-G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["TextScaled"] = true;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["TextSize"] = 14;
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["BackgroundTransparency"] = 1;
-G2L["b"]["Size"] = UDim2.new(0.62307, 0, 0.06431, 0);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Text"] = [[IDKHUB - EARTH TREE.TOOL GIVER]];
-G2L["b"]["Name"] = [[IDKUITITLEe]];
-G2L["b"]["Position"] = UDim2.new(0.01563, 0, 0.01437, 0);
-
--- StarterGui.ScreenGui.uiui.IDKUITITLEe.RGB
-G2L["c"] = Instance.new("Script", G2L["b"]);
-G2L["c"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.btn
-G2L["d"] = Instance.new("TextButton", G2L["2"]);
-G2L["d"]["TextWrapped"] = true;
-G2L["d"]["BorderSizePixel"] = 0;
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["TextScaled"] = true;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d"]["Size"] = UDim2.new(0.37111, 0, 0.10059, 0);
-G2L["d"]["BackgroundTransparency"] = 0.25;
-G2L["d"]["Name"] = [[btn]];
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Text"] = [[BOOMBOX]];
-G2L["d"]["Position"] = UDim2.new(0.01367, 0, 0.21315, 0);
-
--- StarterGui.ScreenGui.uiui.btn.RGB
-G2L["e"] = Instance.new("Script", G2L["d"]);
-G2L["e"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.btn.UICorner
-G2L["f"] = Instance.new("UICorner", G2L["d"]);
+-- // StarterGui.ScreenGui.uiui.LocalScript \\ --
+UI["7"] = Instance.new("LocalScript", UI["2"])
 
 
--- StarterGui.ScreenGui.uiui.btn.UIPadding
-G2L["10"] = Instance.new("UIPadding", G2L["d"]);
-G2L["10"]["PaddingTop"] = UDim.new(0, 10);
-G2L["10"]["PaddingRight"] = UDim.new(0, 10);
-G2L["10"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["10"]["PaddingBottom"] = UDim.new(0, 10);
+-- // StarterGui.ScreenGui.uiui.minisize \\ --
+UI["8"] = Instance.new("TextButton", UI["2"])
+UI["8"]["TextWrapped"] = true
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["TextSize"] = 14
+UI["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["TextScaled"] = true
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8"]["Size"] = UDim2.new(0.07813, 0, 0.11984, 0)
+UI["8"]["BackgroundTransparency"] = 1
+UI["8"]["Name"] = [[minisize]]
+UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["Text"] = [[_]]
+UI["8"]["Position"] = UDim2.new(0.91995, 0, -0.05554, 0)
 
--- StarterGui.ScreenGui.uiui.btn.LocalScript
-G2L["11"] = Instance.new("LocalScript", G2L["d"]);
+-- // StarterGui.ScreenGui.uiui.minisize.RGB \\ --
+UI["9"] = Instance.new("Script", UI["8"])
+UI["9"]["Name"] = [[RGB]]
+
+-- // StarterGui.ScreenGui.uiui.minisize.minis \\ --
+UI["a"] = Instance.new("LocalScript", UI["8"])
+UI["a"]["Name"] = [[minis]]
+
+-- // StarterGui.ScreenGui.uiui.IDKUITITLEe \\ --
+UI["b"] = Instance.new("TextLabel", UI["2"])
+UI["b"]["TextWrapped"] = true
+UI["b"]["BorderSizePixel"] = 0
+UI["b"]["TextScaled"] = true
+UI["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["TextSize"] = 14
+UI["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["BackgroundTransparency"] = 1
+UI["b"]["Size"] = UDim2.new(0.62307, 0, 0.06431, 0)
+UI["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b"]["Text"] = [[IDKHUB - EARTH TREE.TOOL GIVER]]
+UI["b"]["Name"] = [[IDKUITITLEe]]
+UI["b"]["Position"] = UDim2.new(0.01563, 0, 0.01437, 0)
+
+-- // StarterGui.ScreenGui.uiui.IDKUITITLEe.RGB \\ --
+UI["c"] = Instance.new("Script", UI["b"])
+UI["c"]["Name"] = [[RGB]]
+
+-- // StarterGui.ScreenGui.uiui.btn \\ --
+UI["d"] = Instance.new("TextButton", UI["2"])
+UI["d"]["TextWrapped"] = true
+UI["d"]["BorderSizePixel"] = 0
+UI["d"]["TextSize"] = 14
+UI["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d"]["TextScaled"] = true
+UI["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0)
+UI["d"]["BackgroundTransparency"] = 0.25
+UI["d"]["Name"] = [[btn]]
+UI["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d"]["Text"] = [[BOOMBOX]]
+UI["d"]["Position"] = UDim2.new(0.01367, 0, 0.22992, 0)
+
+-- // StarterGui.ScreenGui.uiui.btn.RGB \\ --
+UI["e"] = Instance.new("Script", UI["d"])
+UI["e"]["Name"] = [[RGB]]
+
+-- // StarterGui.ScreenGui.uiui.btn.UICorner \\ --
+UI["f"] = Instance.new("UICorner", UI["d"])
 
 
--- StarterGui.ScreenGui.tcui
-G2L["12"] = Instance.new("TextButton", G2L["1"]);
-G2L["12"]["TextWrapped"] = true;
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["TextSize"] = 14;
-G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["TextScaled"] = true;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12"]["Size"] = UDim2.new(0.04174, 0, 0.07517, 0);
-G2L["12"]["BackgroundTransparency"] = 0.5;
-G2L["12"]["Name"] = [[tcui]];
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[IDK]];
-G2L["12"]["Visible"] = false;
-G2L["12"]["Position"] = UDim2.new(0.47913, 0, 0.21342, 0);
+-- // StarterGui.ScreenGui.uiui.btn.UIPadding \\ --
+UI["10"] = Instance.new("UIPadding", UI["d"])
+UI["10"]["PaddingTop"] = UDim.new(0, 10)
+UI["10"]["PaddingRight"] = UDim.new(0, 10)
+UI["10"]["PaddingLeft"] = UDim.new(0, 10)
+UI["10"]["PaddingBottom"] = UDim.new(0, 10)
 
--- StarterGui.ScreenGui.tcui.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["12"]);
+-- // StarterGui.ScreenGui.uiui.btn.LocalScript \\ --
+UI["11"] = Instance.new("LocalScript", UI["d"])
 
 
--- StarterGui.ScreenGui.tcui.UIStroke
-G2L["14"] = Instance.new("UIStroke", G2L["12"]);
-G2L["14"]["Thickness"] = 2.2;
-G2L["14"]["Color"] = Color3.fromRGB(255, 255, 255);
+-- // StarterGui.ScreenGui.tcui \\ --
+UI["12"] = Instance.new("TextButton", UI["1"])
+UI["12"]["TextWrapped"] = true
+UI["12"]["BorderSizePixel"] = 0
+UI["12"]["TextSize"] = 14
+UI["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["TextScaled"] = true
+UI["12"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["12"]["Size"] = UDim2.new(0.04174, 0, 0.07517, 0)
+UI["12"]["BackgroundTransparency"] = 0.5
+UI["12"]["Name"] = [[tcui]]
+UI["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["Text"] = [[IDK]]
+UI["12"]["Visible"] = false
+UI["12"]["Position"] = UDim2.new(0.47913, 0, 0.21342, 0)
 
--- StarterGui.ScreenGui.tcui.rgb
-G2L["15"] = Instance.new("LocalScript", G2L["12"]);
-G2L["15"]["Name"] = [[rgb]];
-
--- StarterGui.ScreenGui.tcui.LocalScript
-G2L["16"] = Instance.new("LocalScript", G2L["12"]);
+-- // StarterGui.ScreenGui.tcui.UICorner \\ --
+UI["13"] = Instance.new("UICorner", UI["12"])
 
 
--- StarterGui.ScreenGui.tcui.UIPadding
-G2L["17"] = Instance.new("UIPadding", G2L["12"]);
-G2L["17"]["PaddingTop"] = UDim.new(0, 5);
-G2L["17"]["PaddingRight"] = UDim.new(0, 5);
-G2L["17"]["PaddingLeft"] = UDim.new(0, 5);
-G2L["17"]["PaddingBottom"] = UDim.new(0, 5);
+-- // StarterGui.ScreenGui.tcui.UIStroke \\ --
+UI["14"] = Instance.new("UIStroke", UI["12"])
+UI["14"]["Thickness"] = 2.2
+UI["14"]["Color"] = Color3.fromRGB(255, 255, 255)
 
--- StarterGui.ScreenGui.tcui.UIGradient
-G2L["18"] = Instance.new("UIGradient", G2L["12"]);
-G2L["18"]["Offset"] = Vector2.new(1, 0);
-G2L["18"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.495, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+-- // StarterGui.ScreenGui.tcui.rgb \\ --
+UI["15"] = Instance.new("LocalScript", UI["12"])
+UI["15"]["Name"] = [[rgb]]
 
--- StarterGui.ScreenGui.tcui.tggleui
-G2L["19"] = Instance.new("LocalScript", G2L["12"]);
-G2L["19"]["Name"] = [[tggleui]];
+-- // StarterGui.ScreenGui.tcui.LocalScript \\ --
+UI["16"] = Instance.new("LocalScript", UI["12"])
 
--- StarterGui.ScreenGui.uiui.UIStroke.rgb
-local function C_6()
-local script = G2L["6"];
+
+-- // StarterGui.ScreenGui.tcui.UIPadding \\ --
+UI["17"] = Instance.new("UIPadding", UI["12"])
+UI["17"]["PaddingTop"] = UDim.new(0, 5)
+UI["17"]["PaddingRight"] = UDim.new(0, 5)
+UI["17"]["PaddingLeft"] = UDim.new(0, 5)
+UI["17"]["PaddingBottom"] = UDim.new(0, 5)
+
+-- // StarterGui.ScreenGui.tcui.UIGradient \\ --
+UI["18"] = Instance.new("UIGradient", UI["12"])
+UI["18"]["Offset"] = Vector2.new(1, 0)
+UI["18"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.495, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))}
+
+-- // StarterGui.ScreenGui.tcui.tggleui \\ --
+UI["19"] = Instance.new("LocalScript", UI["12"])
+UI["19"]["Name"] = [[tggleui]]
+
+-- // StarterGui.ScreenGui.uiui.UIStroke.rgb \\ --
+local function SCRIPT_6()
+local script = UI["6"]
 	local thisframe = script.Parent.UIGradient
 	
 	while true do
 		thisframe.Rotation += 10
 		wait()
 	end
-end;
-task.spawn(C_6);
--- StarterGui.ScreenGui.uiui.LocalScript
-local function C_7()
-local script = G2L["7"];
+end
+task.spawn(SCRIPT_6)
+-- // StarterGui.ScreenGui.uiui.LocalScript \\ --
+local function SCRIPT_7()
+local script = UI["7"]
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 	
-end;
-task.spawn(C_7);
--- StarterGui.ScreenGui.uiui.minisize.minis
-local function C_a()
-local script = G2L["a"];
+end
+task.spawn(SCRIPT_7)
+-- // StarterGui.ScreenGui.uiui.minisize.minis \\ --
+local function SCRIPT_a()
+local script = UI["a"]
 	local closeui = script.Parent
 	local fui = script.Parent.Parent.Parent.uiui
 	local ic = script.Parent.Parent.Parent.tcui
@@ -197,11 +200,11 @@ local script = G2L["a"];
 		ic.Visible = true
 	end)
 	
-end;
-task.spawn(C_a);
--- StarterGui.ScreenGui.uiui.btn.LocalScript
-local function C_11()
-local script = G2L["11"];
+end
+task.spawn(SCRIPT_a)
+-- // StarterGui.ScreenGui.uiui.btn.LocalScript \\ --
+local function SCRIPT_11()
+local script = UI["11"]
 	local args ={
 		[1] = "Change"
 		[2] = "Boombox"
@@ -209,30 +212,30 @@ local script = G2L["11"];
 	}
 	
 	game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-end;
-task.spawn(C_11);
--- StarterGui.ScreenGui.tcui.rgb
-local function C_15()
-local script = G2L["15"];
+end
+task.spawn(SCRIPT_11)
+-- // StarterGui.ScreenGui.tcui.rgb \\ --
+local function SCRIPT_15()
+local script = UI["15"]
 	local thisframe = script.Parent.UIGradient
 	
 	while true do
 		thisframe.Rotation += 2
 		wait()
 	end
-end;
-task.spawn(C_15);
--- StarterGui.ScreenGui.tcui.LocalScript
-local function C_16()
-local script = G2L["16"];
+end
+task.spawn(SCRIPT_15)
+-- // StarterGui.ScreenGui.tcui.LocalScript \\ --
+local function SCRIPT_16()
+local script = UI["16"]
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 	
-end;
-task.spawn(C_16);
--- StarterGui.ScreenGui.tcui.tggleui
-local function C_19()
-local script = G2L["19"];
+end
+task.spawn(SCRIPT_16)
+-- // StarterGui.ScreenGui.tcui.tggleui \\ --
+local function SCRIPT_19()
+local script = UI["19"]
 	
 	local fui = script.Parent.Parent.uiui
 	local ic = script.Parent.Parent.tcui
@@ -243,7 +246,7 @@ local script = G2L["19"];
 	end)
 	
 	
-end;
-task.spawn(C_19);
+end
+task.spawn(SCRIPT_19)
 
-return G2L["1"], require;
+return UI["1"], require;
