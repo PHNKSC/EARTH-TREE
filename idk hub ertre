@@ -1,6 +1,6 @@
 
 
--- Instances: 65 | Scripts: 15 | Modules: 0
+-- Instances: 80 | Scripts: 18 | Modules: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -17,489 +17,553 @@ G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[uiui]];
 G2L["2"]["BackgroundTransparency"] = 0.15;
 
--- StarterGui.ScreenGui.uiui.UICorner
-G2L["3"] = Instance.new("UICorner", G2L["2"]);
-
-
--- StarterGui.ScreenGui.uiui.UIStroke
-G2L["4"] = Instance.new("UIStroke", G2L["2"]);
-G2L["4"]["Thickness"] = 2.2;
-G2L["4"]["Color"] = Color3.fromRGB(255, 255, 255);
-
--- StarterGui.ScreenGui.uiui.UIStroke.UIGradient
-G2L["5"] = Instance.new("UIGradient", G2L["4"]);
-G2L["5"]["Offset"] = Vector2.new(-0.5, 0);
-G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 2, 2)),ColorSequenceKeypoint.new(0.140, Color3.fromRGB(255, 208, 17)),ColorSequenceKeypoint.new(0.263, Color3.fromRGB(50, 255, 27)),ColorSequenceKeypoint.new(0.374, Color3.fromRGB(50, 239, 255)),ColorSequenceKeypoint.new(0.462, Color3.fromRGB(47, 68, 255)),ColorSequenceKeypoint.new(0.543, Color3.fromRGB(29, 21, 255)),ColorSequenceKeypoint.new(0.631, Color3.fromRGB(210, 26, 255)),ColorSequenceKeypoint.new(0.730, Color3.fromRGB(255, 29, 203)),ColorSequenceKeypoint.new(0.820, Color3.fromRGB(255, 25, 87)),ColorSequenceKeypoint.new(0.917, Color3.fromRGB(255, 0, 5)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 5))};
-
--- StarterGui.ScreenGui.uiui.UIStroke.rgb
-G2L["6"] = Instance.new("LocalScript", G2L["4"]);
-G2L["6"]["Name"] = [[rgb]];
-
 -- StarterGui.ScreenGui.uiui.LocalScript
-G2L["7"] = Instance.new("LocalScript", G2L["2"]);
-
-
--- StarterGui.ScreenGui.uiui.minisize
-G2L["8"] = Instance.new("TextButton", G2L["2"]);
-G2L["8"]["TextWrapped"] = true;
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["TextSize"] = 14;
-G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["TextScaled"] = true;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8"]["Size"] = UDim2.new(0.07813, 0, 0.11984, 0);
-G2L["8"]["BackgroundTransparency"] = 1;
-G2L["8"]["Name"] = [[minisize]];
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Text"] = [[_]];
-G2L["8"]["Position"] = UDim2.new(0.91995, 0, -0.05554, 0);
-
--- StarterGui.ScreenGui.uiui.minisize.RGB
-G2L["9"] = Instance.new("Script", G2L["8"]);
-G2L["9"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.minisize.minis
-G2L["a"] = Instance.new("LocalScript", G2L["8"]);
-G2L["a"]["Name"] = [[minis]];
-
--- StarterGui.ScreenGui.uiui.IDKUITITLEe
-G2L["b"] = Instance.new("TextLabel", G2L["2"]);
-G2L["b"]["TextWrapped"] = true;
-G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["TextScaled"] = true;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["TextSize"] = 14;
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["BackgroundTransparency"] = 1;
-G2L["b"]["Size"] = UDim2.new(0.62307, 0, 0.06431, 0);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Text"] = [[IDKHUB - EARTH TREE.TOOL GIVER]];
-G2L["b"]["Name"] = [[IDKUITITLEe]];
-G2L["b"]["Position"] = UDim2.new(0.01563, 0, 0.01437, 0);
-
--- StarterGui.ScreenGui.uiui.IDKUITITLEe.RGB
-G2L["c"] = Instance.new("Script", G2L["b"]);
-G2L["c"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.Boombox
-G2L["d"] = Instance.new("TextButton", G2L["2"]);
-G2L["d"]["TextWrapped"] = true;
-G2L["d"]["BorderSizePixel"] = 0;
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["TextScaled"] = true;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
-G2L["d"]["BackgroundTransparency"] = 0.25;
-G2L["d"]["Name"] = [[Boombox]];
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Text"] = [[BOOMBOX]];
-G2L["d"]["Position"] = UDim2.new(0.01367, 0, 0.22992, 0);
-
--- StarterGui.ScreenGui.uiui.Boombox.RGB
-G2L["e"] = Instance.new("Script", G2L["d"]);
-G2L["e"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.Boombox.UICorner
-G2L["f"] = Instance.new("UICorner", G2L["d"]);
-
-
--- StarterGui.ScreenGui.uiui.Boombox.UIPadding
-G2L["10"] = Instance.new("UIPadding", G2L["d"]);
-G2L["10"]["PaddingTop"] = UDim.new(0, 10);
-G2L["10"]["PaddingRight"] = UDim.new(0, 10);
-G2L["10"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["10"]["PaddingBottom"] = UDim.new(0, 10);
-
--- StarterGui.ScreenGui.uiui.Boombox.LocalScript
-G2L["11"] = Instance.new("LocalScript", G2L["d"]);
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
 
 
 -- StarterGui.ScreenGui.uiui.TheChaosEdge
-G2L["12"] = Instance.new("TextButton", G2L["2"]);
-G2L["12"]["TextWrapped"] = true;
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["TextSize"] = 14;
-G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["TextScaled"] = true;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["12"]["Size"] = UDim2.new(0.28712, 0, 0.10059, 0);
-G2L["12"]["BackgroundTransparency"] = 0.25;
-G2L["12"]["Name"] = [[TheChaosEdge]];
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[TheChaosEdge]];
-G2L["12"]["Position"] = UDim2.new(0.35157, 0, 0.22992, 0);
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0.28712, 0, 0.10059, 0);
+G2L["4"]["BackgroundTransparency"] = 0.25;
+G2L["4"]["Name"] = [[TheChaosEdge]];
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[TheChaosEdge]];
+G2L["4"]["Position"] = UDim2.new(0.35157, 0, 0.22992, 0);
+
+-- StarterGui.ScreenGui.uiui.TheChaosEdge.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
 
 -- StarterGui.ScreenGui.uiui.TheChaosEdge.RGB
-G2L["13"] = Instance.new("Script", G2L["12"]);
-G2L["13"]["Name"] = [[RGB]];
+G2L["6"] = Instance.new("Script", G2L["4"]);
+G2L["6"]["Name"] = [[RGB]];
 
 -- StarterGui.ScreenGui.uiui.TheChaosEdge.UICorner
-G2L["14"] = Instance.new("UICorner", G2L["12"]);
+G2L["7"] = Instance.new("UICorner", G2L["4"]);
 
 
 -- StarterGui.ScreenGui.uiui.TheChaosEdge.UIPadding
-G2L["15"] = Instance.new("UIPadding", G2L["12"]);
-G2L["15"]["PaddingTop"] = UDim.new(0, 10);
-G2L["15"]["PaddingRight"] = UDim.new(0, 10);
-G2L["15"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["15"]["PaddingBottom"] = UDim.new(0, 10);
-
--- StarterGui.ScreenGui.uiui.TheChaosEdge.LocalScript
-G2L["16"] = Instance.new("LocalScript", G2L["12"]);
-
+G2L["8"] = Instance.new("UIPadding", G2L["4"]);
+G2L["8"]["PaddingTop"] = UDim.new(0, 10);
+G2L["8"]["PaddingRight"] = UDim.new(0, 10);
+G2L["8"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["8"]["PaddingBottom"] = UDim.new(0, 10);
 
 -- StarterGui.ScreenGui.uiui.Cup
-G2L["17"] = Instance.new("TextButton", G2L["2"]);
-G2L["17"]["TextWrapped"] = true;
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["TextSize"] = 14;
-G2L["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["TextScaled"] = true;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
-G2L["17"]["BackgroundTransparency"] = 0.25;
-G2L["17"]["Name"] = [[Cup]];
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["Text"] = [[Cup]];
-G2L["17"]["Position"] = UDim2.new(0.65823, 0, 0.22992, 0);
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
+G2L["9"]["BackgroundTransparency"] = 0.25;
+G2L["9"]["Name"] = [[Cup]];
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Cup]];
+G2L["9"]["Position"] = UDim2.new(0.65823, 0, 0.22992, 0);
 
 -- StarterGui.ScreenGui.uiui.Cup.RGB
-G2L["18"] = Instance.new("Script", G2L["17"]);
-G2L["18"]["Name"] = [[RGB]];
+G2L["a"] = Instance.new("Script", G2L["9"]);
+G2L["a"]["Name"] = [[RGB]];
 
--- StarterGui.ScreenGui.uiui.Cup.UICorner
-G2L["19"] = Instance.new("UICorner", G2L["17"]);
+-- StarterGui.ScreenGui.uiui.Cup.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["9"]);
 
 
 -- StarterGui.ScreenGui.uiui.Cup.UIPadding
-G2L["1a"] = Instance.new("UIPadding", G2L["17"]);
-G2L["1a"]["PaddingTop"] = UDim.new(0, 10);
-G2L["1a"]["PaddingRight"] = UDim.new(0, 10);
-G2L["1a"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["1a"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["c"] = Instance.new("UIPadding", G2L["9"]);
+G2L["c"]["PaddingTop"] = UDim.new(0, 10);
+G2L["c"]["PaddingRight"] = UDim.new(0, 10);
+G2L["c"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["c"]["PaddingBottom"] = UDim.new(0, 10);
 
--- StarterGui.ScreenGui.uiui.Cup.LocalScript
-G2L["1b"] = Instance.new("LocalScript", G2L["17"]);
-
-
--- StarterGui.ScreenGui.uiui.Cup2
-G2L["1c"] = Instance.new("TextButton", G2L["2"]);
-G2L["1c"]["TextWrapped"] = true;
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["TextScaled"] = true;
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
-G2L["1c"]["BackgroundTransparency"] = 0.25;
-G2L["1c"]["Name"] = [[Cup2]];
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[Cup2]];
-G2L["1c"]["Position"] = UDim2.new(0.65823, 0, 0.35446, 0);
-
--- StarterGui.ScreenGui.uiui.Cup2.RGB
-G2L["1d"] = Instance.new("Script", G2L["1c"]);
-G2L["1d"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.Cup2.UICorner
-G2L["1e"] = Instance.new("UICorner", G2L["1c"]);
+-- StarterGui.ScreenGui.uiui.Cup.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["9"]);
 
 
--- StarterGui.ScreenGui.uiui.Cup2.UIPadding
-G2L["1f"] = Instance.new("UIPadding", G2L["1c"]);
-G2L["1f"]["PaddingTop"] = UDim.new(0, 10);
-G2L["1f"]["PaddingRight"] = UDim.new(0, 10);
-G2L["1f"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["1f"]["PaddingBottom"] = UDim.new(0, 10);
+-- StarterGui.ScreenGui.uiui.Boombox
+G2L["e"] = Instance.new("TextButton", G2L["2"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
+G2L["e"]["BackgroundTransparency"] = 0.25;
+G2L["e"]["Name"] = [[Boombox]];
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[BOOMBOX]];
+G2L["e"]["Position"] = UDim2.new(0.01367, 0, 0.22992, 0);
 
--- StarterGui.ScreenGui.uiui.Cup2.LocalScript
-G2L["20"] = Instance.new("LocalScript", G2L["1c"]);
+-- StarterGui.ScreenGui.uiui.Boombox.RGB
+G2L["f"] = Instance.new("Script", G2L["e"]);
+G2L["f"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.Boombox.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["e"]);
+
+
+-- StarterGui.ScreenGui.uiui.Boombox.UIPadding
+G2L["11"] = Instance.new("UIPadding", G2L["e"]);
+G2L["11"]["PaddingTop"] = UDim.new(0, 10);
+G2L["11"]["PaddingRight"] = UDim.new(0, 10);
+G2L["11"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["11"]["PaddingBottom"] = UDim.new(0, 10);
+
+-- StarterGui.ScreenGui.uiui.Boombox.UICorner
+G2L["12"] = Instance.new("UICorner", G2L["e"]);
+
+
+-- StarterGui.ScreenGui.uiui.BloxyCola
+G2L["13"] = Instance.new("TextButton", G2L["2"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
+G2L["13"]["BackgroundTransparency"] = 0.25;
+G2L["13"]["Name"] = [[BloxyCola]];
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[BloxyCola]];
+G2L["13"]["Position"] = UDim2.new(0.01367, 0, 0.60114, 0);
+
+-- StarterGui.ScreenGui.uiui.BloxyCola.RGB
+G2L["14"] = Instance.new("Script", G2L["13"]);
+G2L["14"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.BloxyCola.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["13"]);
+
+
+-- StarterGui.ScreenGui.uiui.BloxyCola.UIPadding
+G2L["16"] = Instance.new("UIPadding", G2L["13"]);
+G2L["16"]["PaddingTop"] = UDim.new(0, 10);
+G2L["16"]["PaddingRight"] = UDim.new(0, 10);
+G2L["16"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["16"]["PaddingBottom"] = UDim.new(0, 10);
+
+-- StarterGui.ScreenGui.uiui.BloxyCola.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["13"]);
 
 
 -- StarterGui.ScreenGui.uiui.Heal
-G2L["21"] = Instance.new("TextButton", G2L["2"]);
-G2L["21"]["TextWrapped"] = true;
-G2L["21"]["BorderSizePixel"] = 0;
-G2L["21"]["TextSize"] = 14;
-G2L["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21"]["TextScaled"] = true;
-G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["21"]["Size"] = UDim2.new(0.28712, 0, 0.10059, 0);
-G2L["21"]["BackgroundTransparency"] = 0.25;
-G2L["21"]["Name"] = [[Heal]];
-G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21"]["Text"] = [[Health]];
-G2L["21"]["Position"] = UDim2.new(0.35157, 0, 0.35446, 0);
+G2L["18"] = Instance.new("TextButton", G2L["2"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["Size"] = UDim2.new(0.28712, 0, 0.10059, 0);
+G2L["18"]["BackgroundTransparency"] = 0.25;
+G2L["18"]["Name"] = [[Heal]];
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[Health]];
+G2L["18"]["Position"] = UDim2.new(0.35157, 0, 0.35446, 0);
 
 -- StarterGui.ScreenGui.uiui.Heal.RGB
-G2L["22"] = Instance.new("Script", G2L["21"]);
-G2L["22"]["Name"] = [[RGB]];
+G2L["19"] = Instance.new("Script", G2L["18"]);
+G2L["19"]["Name"] = [[RGB]];
 
--- StarterGui.ScreenGui.uiui.Heal.UICorner
-G2L["23"] = Instance.new("UICorner", G2L["21"]);
+-- StarterGui.ScreenGui.uiui.Heal.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["18"]);
 
 
 -- StarterGui.ScreenGui.uiui.Heal.UIPadding
-G2L["24"] = Instance.new("UIPadding", G2L["21"]);
-G2L["24"]["PaddingTop"] = UDim.new(0, 10);
-G2L["24"]["PaddingRight"] = UDim.new(0, 10);
-G2L["24"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["24"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["1b"] = Instance.new("UIPadding", G2L["18"]);
+G2L["1b"]["PaddingTop"] = UDim.new(0, 10);
+G2L["1b"]["PaddingRight"] = UDim.new(0, 10);
+G2L["1b"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["1b"]["PaddingBottom"] = UDim.new(0, 10);
 
--- StarterGui.ScreenGui.uiui.Heal.LocalScript
-G2L["25"] = Instance.new("LocalScript", G2L["21"]);
-
-
--- StarterGui.ScreenGui.uiui.Chips
-G2L["26"] = Instance.new("TextButton", G2L["2"]);
-G2L["26"]["TextWrapped"] = true;
-G2L["26"]["BorderSizePixel"] = 0;
-G2L["26"]["TextSize"] = 14;
-G2L["26"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26"]["TextScaled"] = true;
-G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["26"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
-G2L["26"]["BackgroundTransparency"] = 0.25;
-G2L["26"]["Name"] = [[Chips]];
-G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26"]["Text"] = [[Chips]];
-G2L["26"]["Position"] = UDim2.new(0.01367, 0, 0.35446, 0);
-
--- StarterGui.ScreenGui.uiui.Chips.RGB
-G2L["27"] = Instance.new("Script", G2L["26"]);
-G2L["27"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.Chips.UICorner
-G2L["28"] = Instance.new("UICorner", G2L["26"]);
-
-
--- StarterGui.ScreenGui.uiui.Chips.UIPadding
-G2L["29"] = Instance.new("UIPadding", G2L["26"]);
-G2L["29"]["PaddingTop"] = UDim.new(0, 10);
-G2L["29"]["PaddingRight"] = UDim.new(0, 10);
-G2L["29"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["29"]["PaddingBottom"] = UDim.new(0, 10);
-
--- StarterGui.ScreenGui.uiui.Chips.LocalScript
-G2L["2a"] = Instance.new("LocalScript", G2L["26"]);
+-- StarterGui.ScreenGui.uiui.Heal.UICorner
+G2L["1c"] = Instance.new("UICorner", G2L["18"]);
 
 
 -- StarterGui.ScreenGui.uiui.sword
-G2L["2b"] = Instance.new("TextButton", G2L["2"]);
-G2L["2b"]["TextWrapped"] = true;
-G2L["2b"]["BorderSizePixel"] = 0;
-G2L["2b"]["TextSize"] = 14;
-G2L["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["TextScaled"] = true;
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
-G2L["2b"]["BackgroundTransparency"] = 0.25;
-G2L["2b"]["Name"] = [[sword]];
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Text"] = [[Sword]];
-G2L["2b"]["Position"] = UDim2.new(0.01172, 0, 0.4766, 0);
+G2L["1d"] = Instance.new("TextButton", G2L["2"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
+G2L["1d"]["BackgroundTransparency"] = 0.25;
+G2L["1d"]["Name"] = [[sword]];
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[Sword]];
+G2L["1d"]["Position"] = UDim2.new(0.01172, 0, 0.4766, 0);
 
 -- StarterGui.ScreenGui.uiui.sword.RGB
-G2L["2c"] = Instance.new("Script", G2L["2b"]);
-G2L["2c"]["Name"] = [[RGB]];
+G2L["1e"] = Instance.new("Script", G2L["1d"]);
+G2L["1e"]["Name"] = [[RGB]];
 
--- StarterGui.ScreenGui.uiui.sword.UICorner
-G2L["2d"] = Instance.new("UICorner", G2L["2b"]);
+-- StarterGui.ScreenGui.uiui.sword.LocalScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1d"]);
 
 
 -- StarterGui.ScreenGui.uiui.sword.UIPadding
-G2L["2e"] = Instance.new("UIPadding", G2L["2b"]);
-G2L["2e"]["PaddingTop"] = UDim.new(0, 10);
-G2L["2e"]["PaddingRight"] = UDim.new(0, 10);
-G2L["2e"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["2e"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["20"] = Instance.new("UIPadding", G2L["1d"]);
+G2L["20"]["PaddingTop"] = UDim.new(0, 10);
+G2L["20"]["PaddingRight"] = UDim.new(0, 10);
+G2L["20"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["20"]["PaddingBottom"] = UDim.new(0, 10);
 
--- StarterGui.ScreenGui.uiui.sword.LocalScript
-G2L["2f"] = Instance.new("LocalScript", G2L["2b"]);
-
-
--- StarterGui.ScreenGui.uiui.btn
-G2L["30"] = Instance.new("TextButton", G2L["2"]);
-G2L["30"]["TextWrapped"] = true;
-G2L["30"]["BorderSizePixel"] = 0;
-G2L["30"]["TextSize"] = 14;
-G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["TextScaled"] = true;
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["30"]["Size"] = UDim2.new(0.28712, 0, 0.10059, 0);
-G2L["30"]["BackgroundTransparency"] = 0.25;
-G2L["30"]["Name"] = [[btn]];
-G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Text"] = [[TheChaosEdge]];
-G2L["30"]["Position"] = UDim2.new(0.34962, 0, 0.4766, 0);
-
--- StarterGui.ScreenGui.uiui.btn.RGB
-G2L["31"] = Instance.new("Script", G2L["30"]);
-G2L["31"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.btn.UICorner
-G2L["32"] = Instance.new("UICorner", G2L["30"]);
+-- StarterGui.ScreenGui.uiui.sword.UICorner
+G2L["21"] = Instance.new("UICorner", G2L["1d"]);
 
 
--- StarterGui.ScreenGui.uiui.btn.UIPadding
-G2L["33"] = Instance.new("UIPadding", G2L["30"]);
-G2L["33"]["PaddingTop"] = UDim.new(0, 10);
-G2L["33"]["PaddingRight"] = UDim.new(0, 10);
-G2L["33"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["33"]["PaddingBottom"] = UDim.new(0, 10);
+-- StarterGui.ScreenGui.uiui.minisize
+G2L["22"] = Instance.new("TextButton", G2L["2"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["Size"] = UDim2.new(0.07813, 0, 0.11984, 0);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["Name"] = [[minisize]];
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[_]];
+G2L["22"]["Position"] = UDim2.new(0.91995, 0, -0.05554, 0);
 
--- StarterGui.ScreenGui.uiui.btn.LocalScript
-G2L["34"] = Instance.new("LocalScript", G2L["30"]);
+-- StarterGui.ScreenGui.uiui.minisize.minis
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
+G2L["23"]["Name"] = [[minis]];
 
+-- StarterGui.ScreenGui.uiui.minisize.RGB
+G2L["24"] = Instance.new("Script", G2L["22"]);
+G2L["24"]["Name"] = [[RGB]];
 
 -- StarterGui.ScreenGui.uiui.Cup3
-G2L["35"] = Instance.new("TextButton", G2L["2"]);
-G2L["35"]["TextWrapped"] = true;
-G2L["35"]["BorderSizePixel"] = 0;
-G2L["35"]["TextSize"] = 14;
-G2L["35"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["TextScaled"] = true;
-G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["35"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
-G2L["35"]["BackgroundTransparency"] = 0.25;
-G2L["35"]["Name"] = [[Cup3]];
-G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["Text"] = [[Cup3]];
-G2L["35"]["Position"] = UDim2.new(0.65627, 0, 0.4766, 0);
-
--- StarterGui.ScreenGui.uiui.Cup3.RGB
-G2L["36"] = Instance.new("Script", G2L["35"]);
-G2L["36"]["Name"] = [[RGB]];
-
--- StarterGui.ScreenGui.uiui.Cup3.UICorner
-G2L["37"] = Instance.new("UICorner", G2L["35"]);
-
-
--- StarterGui.ScreenGui.uiui.Cup3.UIPadding
-G2L["38"] = Instance.new("UIPadding", G2L["35"]);
-G2L["38"]["PaddingTop"] = UDim.new(0, 10);
-G2L["38"]["PaddingRight"] = UDim.new(0, 10);
-G2L["38"]["PaddingLeft"] = UDim.new(0, 10);
-G2L["38"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["25"] = Instance.new("TextButton", G2L["2"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
+G2L["25"]["BackgroundTransparency"] = 0.25;
+G2L["25"]["Name"] = [[Cup3]];
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Cup3]];
+G2L["25"]["Position"] = UDim2.new(0.65627, 0, 0.4766, 0);
 
 -- StarterGui.ScreenGui.uiui.Cup3.LocalScript
-G2L["39"] = Instance.new("LocalScript", G2L["35"]);
+G2L["26"] = Instance.new("LocalScript", G2L["25"]);
 
+
+-- StarterGui.ScreenGui.uiui.Cup3.RGB
+G2L["27"] = Instance.new("Script", G2L["25"]);
+G2L["27"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.Cup3.UIPadding
+G2L["28"] = Instance.new("UIPadding", G2L["25"]);
+G2L["28"]["PaddingTop"] = UDim.new(0, 10);
+G2L["28"]["PaddingRight"] = UDim.new(0, 10);
+G2L["28"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["28"]["PaddingBottom"] = UDim.new(0, 10);
+
+-- StarterGui.ScreenGui.uiui.Cup3.UICorner
+G2L["29"] = Instance.new("UICorner", G2L["25"]);
+
+
+-- StarterGui.ScreenGui.uiui.pizza trow
+G2L["2a"] = Instance.new("TextButton", G2L["2"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["Size"] = UDim2.new(0.28712, 0, 0.10059, 0);
+G2L["2a"]["BackgroundTransparency"] = 0.25;
+G2L["2a"]["Name"] = [[pizza trow]];
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[Throwing Pizza]];
+G2L["2a"]["Position"] = UDim2.new(0.34962, 0, 0.4766, 0);
+
+-- StarterGui.ScreenGui.uiui.pizza trow.RGB
+G2L["2b"] = Instance.new("Script", G2L["2a"]);
+G2L["2b"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.pizza trow.LocalScript
+G2L["2c"] = Instance.new("LocalScript", G2L["2a"]);
+
+
+-- StarterGui.ScreenGui.uiui.pizza trow.UIPadding
+G2L["2d"] = Instance.new("UIPadding", G2L["2a"]);
+G2L["2d"]["PaddingTop"] = UDim.new(0, 10);
+G2L["2d"]["PaddingRight"] = UDim.new(0, 10);
+G2L["2d"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["2d"]["PaddingBottom"] = UDim.new(0, 10);
+
+-- StarterGui.ScreenGui.uiui.pizza trow.UICorner
+G2L["2e"] = Instance.new("UICorner", G2L["2a"]);
+
+
+-- StarterGui.ScreenGui.uiui.IDKUITITLEe
+G2L["2f"] = Instance.new("TextLabel", G2L["2"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextScaled"] = true;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["TextSize"] = 14;
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["BackgroundTransparency"] = 1;
+G2L["2f"]["Size"] = UDim2.new(0.62307, 0, 0.06431, 0);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[IDKHUB - EARTH TREE.TOOL GIVER]];
+G2L["2f"]["Name"] = [[IDKUITITLEe]];
+G2L["2f"]["Position"] = UDim2.new(0.01563, 0, 0.01437, 0);
+
+-- StarterGui.ScreenGui.uiui.IDKUITITLEe.RGB
+G2L["30"] = Instance.new("Script", G2L["2f"]);
+G2L["30"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.Smore
+G2L["31"] = Instance.new("TextButton", G2L["2"]);
+G2L["31"]["TextWrapped"] = true;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["TextScaled"] = true;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
+G2L["31"]["BackgroundTransparency"] = 0.25;
+G2L["31"]["Name"] = [[Smore]];
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[Smore]];
+G2L["31"]["Position"] = UDim2.new(0.65823, 0, 0.60114, 0);
+
+-- StarterGui.ScreenGui.uiui.Smore.RGB
+G2L["32"] = Instance.new("Script", G2L["31"]);
+G2L["32"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.Smore.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["31"]);
+
+
+-- StarterGui.ScreenGui.uiui.Smore.UICorner
+G2L["34"] = Instance.new("UICorner", G2L["31"]);
+
+
+-- StarterGui.ScreenGui.uiui.Smore.UIPadding
+G2L["35"] = Instance.new("UIPadding", G2L["31"]);
+G2L["35"]["PaddingTop"] = UDim.new(0, 10);
+G2L["35"]["PaddingRight"] = UDim.new(0, 10);
+G2L["35"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["35"]["PaddingBottom"] = UDim.new(0, 10);
+
+-- StarterGui.ScreenGui.uiui.UIStroke
+G2L["36"] = Instance.new("UIStroke", G2L["2"]);
+G2L["36"]["Thickness"] = 2.2;
+G2L["36"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+-- StarterGui.ScreenGui.uiui.UIStroke.rgb
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
+G2L["37"]["Name"] = [[rgb]];
+
+-- StarterGui.ScreenGui.uiui.UIStroke.UIGradient
+G2L["38"] = Instance.new("UIGradient", G2L["36"]);
+G2L["38"]["Offset"] = Vector2.new(-0.5, 0);
+G2L["38"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 2, 2)),ColorSequenceKeypoint.new(0.140, Color3.fromRGB(255, 208, 17)),ColorSequenceKeypoint.new(0.263, Color3.fromRGB(50, 255, 27)),ColorSequenceKeypoint.new(0.374, Color3.fromRGB(50, 239, 255)),ColorSequenceKeypoint.new(0.462, Color3.fromRGB(47, 68, 255)),ColorSequenceKeypoint.new(0.543, Color3.fromRGB(29, 21, 255)),ColorSequenceKeypoint.new(0.631, Color3.fromRGB(210, 26, 255)),ColorSequenceKeypoint.new(0.730, Color3.fromRGB(255, 29, 203)),ColorSequenceKeypoint.new(0.820, Color3.fromRGB(255, 25, 87)),ColorSequenceKeypoint.new(0.917, Color3.fromRGB(255, 0, 5)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 5))};
+
+-- StarterGui.ScreenGui.uiui.Cup2
+G2L["39"] = Instance.new("TextButton", G2L["2"]);
+G2L["39"]["TextWrapped"] = true;
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["TextSize"] = 14;
+G2L["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["TextScaled"] = true;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["39"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
+G2L["39"]["BackgroundTransparency"] = 0.25;
+G2L["39"]["Name"] = [[Cup2]];
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Text"] = [[Cup2]];
+G2L["39"]["Position"] = UDim2.new(0.65823, 0, 0.35446, 0);
+
+-- StarterGui.ScreenGui.uiui.Cup2.LocalScript
+G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
+
+
+-- StarterGui.ScreenGui.uiui.Cup2.RGB
+G2L["3b"] = Instance.new("Script", G2L["39"]);
+G2L["3b"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.Cup2.UICorner
+G2L["3c"] = Instance.new("UICorner", G2L["39"]);
+
+
+-- StarterGui.ScreenGui.uiui.Cup2.UIPadding
+G2L["3d"] = Instance.new("UIPadding", G2L["39"]);
+G2L["3d"]["PaddingTop"] = UDim.new(0, 10);
+G2L["3d"]["PaddingRight"] = UDim.new(0, 10);
+G2L["3d"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["3d"]["PaddingBottom"] = UDim.new(0, 10);
+
+-- StarterGui.ScreenGui.uiui.UICorner
+G2L["3e"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.ScreenGui.uiui.pizza
+G2L["3f"] = Instance.new("TextButton", G2L["2"]);
+G2L["3f"]["TextWrapped"] = true;
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["TextSize"] = 14;
+G2L["3f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["TextScaled"] = true;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3f"]["Size"] = UDim2.new(0.28712, 0, 0.10059, 0);
+G2L["3f"]["BackgroundTransparency"] = 0.25;
+G2L["3f"]["Name"] = [[pizza]];
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Text"] = [[Pizza]];
+G2L["3f"]["Position"] = UDim2.new(0.35157, 0, 0.60114, 0);
+
+-- StarterGui.ScreenGui.uiui.pizza.RGB
+G2L["40"] = Instance.new("Script", G2L["3f"]);
+G2L["40"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.pizza.LocalScript
+G2L["41"] = Instance.new("LocalScript", G2L["3f"]);
+
+
+-- StarterGui.ScreenGui.uiui.pizza.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["3f"]);
+
+
+-- StarterGui.ScreenGui.uiui.pizza.UIPadding
+G2L["43"] = Instance.new("UIPadding", G2L["3f"]);
+G2L["43"]["PaddingTop"] = UDim.new(0, 10);
+G2L["43"]["PaddingRight"] = UDim.new(0, 10);
+G2L["43"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["43"]["PaddingBottom"] = UDim.new(0, 10);
+
+-- StarterGui.ScreenGui.uiui.Chips
+G2L["44"] = Instance.new("TextButton", G2L["2"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["TextSize"] = 14;
+G2L["44"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["TextScaled"] = true;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["44"]["Size"] = UDim2.new(0.31837, 0, 0.10059, 0);
+G2L["44"]["BackgroundTransparency"] = 0.25;
+G2L["44"]["Name"] = [[Chips]];
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Text"] = [[Chips]];
+G2L["44"]["Position"] = UDim2.new(0.01367, 0, 0.35446, 0);
+
+-- StarterGui.ScreenGui.uiui.Chips.RGB
+G2L["45"] = Instance.new("Script", G2L["44"]);
+G2L["45"]["Name"] = [[RGB]];
+
+-- StarterGui.ScreenGui.uiui.Chips.LocalScript
+G2L["46"] = Instance.new("LocalScript", G2L["44"]);
+
+
+-- StarterGui.ScreenGui.uiui.Chips.UICorner
+G2L["47"] = Instance.new("UICorner", G2L["44"]);
+
+
+-- StarterGui.ScreenGui.uiui.Chips.UIPadding
+G2L["48"] = Instance.new("UIPadding", G2L["44"]);
+G2L["48"]["PaddingTop"] = UDim.new(0, 10);
+G2L["48"]["PaddingRight"] = UDim.new(0, 10);
+G2L["48"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["48"]["PaddingBottom"] = UDim.new(0, 10);
 
 -- StarterGui.ScreenGui.tcui
-G2L["3a"] = Instance.new("TextButton", G2L["1"]);
-G2L["3a"]["TextWrapped"] = true;
-G2L["3a"]["BorderSizePixel"] = 0;
-G2L["3a"]["TextSize"] = 14;
-G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["TextScaled"] = true;
-G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3a"]["Size"] = UDim2.new(0.04174, 0, 0.07517, 0);
-G2L["3a"]["BackgroundTransparency"] = 0.5;
-G2L["3a"]["Name"] = [[tcui]];
-G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["Text"] = [[IDK]];
-G2L["3a"]["Visible"] = false;
-G2L["3a"]["Position"] = UDim2.new(0.47913, 0, 0.21342, 0);
+G2L["49"] = Instance.new("TextButton", G2L["1"]);
+G2L["49"]["TextWrapped"] = true;
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["TextSize"] = 14;
+G2L["49"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["TextScaled"] = true;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["49"]["Size"] = UDim2.new(0.04174, 0, 0.07517, 0);
+G2L["49"]["BackgroundTransparency"] = 0.5;
+G2L["49"]["Name"] = [[tcui]];
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Text"] = [[IDK]];
+G2L["49"]["Visible"] = false;
+G2L["49"]["Position"] = UDim2.new(0.47913, 0, 0.21342, 0);
 
--- StarterGui.ScreenGui.tcui.UICorner
-G2L["3b"] = Instance.new("UICorner", G2L["3a"]);
+-- StarterGui.ScreenGui.tcui.rgb
+G2L["4a"] = Instance.new("LocalScript", G2L["49"]);
+G2L["4a"]["Name"] = [[rgb]];
+
+-- StarterGui.ScreenGui.tcui.tggleui
+G2L["4b"] = Instance.new("LocalScript", G2L["49"]);
+G2L["4b"]["Name"] = [[tggleui]];
+
+-- StarterGui.ScreenGui.tcui.LocalScript
+G2L["4c"] = Instance.new("LocalScript", G2L["49"]);
 
 
 -- StarterGui.ScreenGui.tcui.UIStroke
-G2L["3c"] = Instance.new("UIStroke", G2L["3a"]);
-G2L["3c"]["Thickness"] = 2.2;
-G2L["3c"]["Color"] = Color3.fromRGB(255, 255, 255);
-
--- StarterGui.ScreenGui.tcui.rgb
-G2L["3d"] = Instance.new("LocalScript", G2L["3a"]);
-G2L["3d"]["Name"] = [[rgb]];
-
--- StarterGui.ScreenGui.tcui.LocalScript
-G2L["3e"] = Instance.new("LocalScript", G2L["3a"]);
-
-
--- StarterGui.ScreenGui.tcui.UIPadding
-G2L["3f"] = Instance.new("UIPadding", G2L["3a"]);
-G2L["3f"]["PaddingTop"] = UDim.new(0, 5);
-G2L["3f"]["PaddingRight"] = UDim.new(0, 5);
-G2L["3f"]["PaddingLeft"] = UDim.new(0, 5);
-G2L["3f"]["PaddingBottom"] = UDim.new(0, 5);
+G2L["4d"] = Instance.new("UIStroke", G2L["49"]);
+G2L["4d"]["Thickness"] = 2.2;
+G2L["4d"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 -- StarterGui.ScreenGui.tcui.UIGradient
-G2L["40"] = Instance.new("UIGradient", G2L["3a"]);
-G2L["40"]["Offset"] = Vector2.new(1, 0);
-G2L["40"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.495, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
+G2L["4e"] = Instance.new("UIGradient", G2L["49"]);
+G2L["4e"]["Offset"] = Vector2.new(1, 0);
+G2L["4e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 0, 0)),ColorSequenceKeypoint.new(0.495, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 0, 0))};
 
--- StarterGui.ScreenGui.tcui.tggleui
-G2L["41"] = Instance.new("LocalScript", G2L["3a"]);
-G2L["41"]["Name"] = [[tggleui]];
+-- StarterGui.ScreenGui.tcui.UIPadding
+G2L["4f"] = Instance.new("UIPadding", G2L["49"]);
+G2L["4f"]["PaddingTop"] = UDim.new(0, 5);
+G2L["4f"]["PaddingRight"] = UDim.new(0, 5);
+G2L["4f"]["PaddingLeft"] = UDim.new(0, 5);
+G2L["4f"]["PaddingBottom"] = UDim.new(0, 5);
 
--- StarterGui.ScreenGui.uiui.UIStroke.rgb
-local function C_6()
-local script = G2L["6"];
-	local thisframe = script.Parent.UIGradient
-	
-	while true do
-		thisframe.Rotation += 10
-		wait()
-	end
-end;
-task.spawn(C_6);
+-- StarterGui.ScreenGui.tcui.UICorner
+G2L["50"] = Instance.new("UICorner", G2L["49"]);
+
+
 -- StarterGui.ScreenGui.uiui.LocalScript
-local function C_7()
-local script = G2L["7"];
+local function C_3()
+local script = G2L["3"];
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 	
 end;
-task.spawn(C_7);
--- StarterGui.ScreenGui.uiui.minisize.minis
-local function C_a()
-local script = G2L["a"];
-	local closeui = script.Parent
-	local fui = script.Parent.Parent.Parent.uiui
-	local ic = script.Parent.Parent.Parent.tcui
-	
-	closeui.MouseButton1Click:Connect(function()
-		fui.Visible = false
-		ic.Visible = true
-	end)
-	
-end;
-task.spawn(C_a);
--- StarterGui.ScreenGui.uiui.Boombox.LocalScript
-local function C_11()
-local script = G2L["11"];
-	local click = script.Parent
-	
-	click.MouseButton1Click:Connect(function()
-		local args = {
-			[1] = "Change",
-			[2] = "Boombox",
-			[3] = "Inv"
-		}
-	
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-	end)
-end;
-task.spawn(C_11);
+task.spawn(C_3);
 -- StarterGui.ScreenGui.uiui.TheChaosEdge.LocalScript
-local function C_16()
-local script = G2L["16"];
+local function C_5()
+local script = G2L["5"];
 	local click = script.Parent
 	
 	click.MouseButton1Click:Connect(function()
@@ -512,10 +576,10 @@ local script = G2L["16"];
 		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
 	end)
 end;
-task.spawn(C_16);
+task.spawn(C_5);
 -- StarterGui.ScreenGui.uiui.Cup.LocalScript
-local function C_1b()
-local script = G2L["1b"];
+local function C_b()
+local script = G2L["b"];
 	local click = script.Parent
 	
 	click.MouseButton1Click:Connect(function()
@@ -528,26 +592,42 @@ local script = G2L["1b"];
 		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
 	end)
 end;
-task.spawn(C_1b);
--- StarterGui.ScreenGui.uiui.Cup2.LocalScript
-local function C_20()
-local script = G2L["20"];
+task.spawn(C_b);
+-- StarterGui.ScreenGui.uiui.Boombox.LocalScript
+local function C_10()
+local script = G2L["10"];
 	local click = script.Parent
 	
 	click.MouseButton1Click:Connect(function()
 		local args = {
 			[1] = "Change",
-			[2] = "Cup2",
+			[2] = "Boombox",
 			[3] = "Inv"
 		}
 	
 		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
 	end)
 end;
-task.spawn(C_20);
+task.spawn(C_10);
+-- StarterGui.ScreenGui.uiui.BloxyCola.LocalScript
+local function C_15()
+local script = G2L["15"];
+	local click = script.Parent
+	
+	click.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Change",
+			[2] = "BloxyCola",
+			[3] = "Inv"
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+	end)
+end;
+task.spawn(C_15);
 -- StarterGui.ScreenGui.uiui.Heal.LocalScript
-local function C_25()
-local script = G2L["25"];
+local function C_1a()
+local script = G2L["1a"];
 	local click = script.Parent
 	
 	click.MouseButton1Click:Connect(function()
@@ -560,26 +640,10 @@ local script = G2L["25"];
 		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
 	end)
 end;
-task.spawn(C_25);
--- StarterGui.ScreenGui.uiui.Chips.LocalScript
-local function C_2a()
-local script = G2L["2a"];
-	local click = script.Parent
-	
-	click.MouseButton1Click:Connect(function()
-		local args = {
-			[1] = "Change",
-			[2] = "Chips",
-			[3] = "Inv"
-		}
-	
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-	end)
-end;
-task.spawn(C_2a);
+task.spawn(C_1a);
 -- StarterGui.ScreenGui.uiui.sword.LocalScript
-local function C_2f()
-local script = G2L["2f"];
+local function C_1f()
+local script = G2L["1f"];
 	local click = script.Parent
 	
 	click.MouseButton1Click:Connect(function()
@@ -592,26 +656,24 @@ local script = G2L["2f"];
 		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
 	end)
 end;
-task.spawn(C_2f);
--- StarterGui.ScreenGui.uiui.btn.LocalScript
-local function C_34()
-local script = G2L["34"];
-	local click = script.Parent
+task.spawn(C_1f);
+-- StarterGui.ScreenGui.uiui.minisize.minis
+local function C_23()
+local script = G2L["23"];
+	local closeui = script.Parent
+	local fui = script.Parent.Parent.Parent.uiui
+	local ic = script.Parent.Parent.Parent.tcui
 	
-	click.MouseButton1Click:Connect(function()
-		local args = {
-			[1] = "Change",
-			[2] = "TheChaosEdge",
-			[3] = "Inv"
-		}
-	
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+	closeui.MouseButton1Click:Connect(function()
+		fui.Visible = false
+		ic.Visible = true
 	end)
+	
 end;
-task.spawn(C_34);
+task.spawn(C_23);
 -- StarterGui.ScreenGui.uiui.Cup3.LocalScript
-local function C_39()
-local script = G2L["39"];
+local function C_26()
+local script = G2L["26"];
 	local click = script.Parent
 	
 	click.MouseButton1Click:Connect(function()
@@ -624,10 +686,101 @@ local script = G2L["39"];
 		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
 	end)
 end;
-task.spawn(C_39);
+task.spawn(C_26);
+-- StarterGui.ScreenGui.uiui.pizza trow.LocalScript
+local function C_2c()
+local script = G2L["2c"];
+	local click = script.Parent
+	
+	click.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Change",
+			[2] = "Throwing Pizza",
+			[3] = "Inv"
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+	end)
+end;
+task.spawn(C_2c);
+-- StarterGui.ScreenGui.uiui.Smore.LocalScript
+local function C_33()
+local script = G2L["33"];
+	local click = script.Parent
+	
+	click.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Change",
+			[2] = "Smore",
+			[3] = "Inv"
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.ScreenGui.uiui.UIStroke.rgb
+local function C_37()
+local script = G2L["37"];
+	local thisframe = script.Parent.UIGradient
+	
+	while true do
+		thisframe.Rotation += 10
+		wait()
+	end
+end;
+task.spawn(C_37);
+-- StarterGui.ScreenGui.uiui.Cup2.LocalScript
+local function C_3a()
+local script = G2L["3a"];
+	local click = script.Parent
+	
+	click.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Change",
+			[2] = "Cup2",
+			[3] = "Inv"
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+	end)
+end;
+task.spawn(C_3a);
+-- StarterGui.ScreenGui.uiui.pizza.LocalScript
+local function C_41()
+local script = G2L["41"];
+	local click = script.Parent
+	
+	click.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Change",
+			[2] = "Pizza",
+			[3] = "Inv"
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+	end)
+end;
+task.spawn(C_41);
+-- StarterGui.ScreenGui.uiui.Chips.LocalScript
+local function C_46()
+local script = G2L["46"];
+	local click = script.Parent
+	
+	click.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Change",
+			[2] = "Chips",
+			[3] = "Inv"
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+	end)
+end;
+task.spawn(C_46);
 -- StarterGui.ScreenGui.tcui.rgb
-local function C_3d()
-local script = G2L["3d"];
+local function C_4a()
+local script = G2L["4a"];
 	local thisframe = script.Parent.UIGradient
 	
 	while true do
@@ -635,18 +788,10 @@ local script = G2L["3d"];
 		wait()
 	end
 end;
-task.spawn(C_3d);
--- StarterGui.ScreenGui.tcui.LocalScript
-local function C_3e()
-local script = G2L["3e"];
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-	
-end;
-task.spawn(C_3e);
+task.spawn(C_4a);
 -- StarterGui.ScreenGui.tcui.tggleui
-local function C_41()
-local script = G2L["41"];
+local function C_4b()
+local script = G2L["4b"];
 	
 	local fui = script.Parent.Parent.uiui
 	local ic = script.Parent.Parent.tcui
@@ -658,6 +803,14 @@ local script = G2L["41"];
 	
 	
 end;
-task.spawn(C_41);
+task.spawn(C_4b);
+-- StarterGui.ScreenGui.tcui.LocalScript
+local function C_4c()
+local script = G2L["4c"];
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	
+end;
+task.spawn(C_4c);
 
 return G2L["1"], require;
